@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1 style="text-align: center; color: #32271a; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Welcome to My Portfolio</h1>
+            <p style="color: rgb(43, 27, 3); text-align: center;">I'm Inga, a dog breeder🐶 and IT enthusiast💻.</p>
+           
+        </section>
+
+        <section id="about">
+            <h2 style="color: rgb(141, 92, 33);">About Me: Dog & IT in my Life</h2>
+            <p>I have extensive experience and knowledge in dog breeding and now I am acquiring knowledge to gain experience in AI.</p>
+            <img src="inga.jpg" alt="Inga's Photo">
+            <style>
+                img {
+                    width: 200px;
+                    height: 300px;
+                    object-fit: cover;
+                    border-radius: 50% ;
+                    border: 3px solid #ccc;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+             }
+            </style>
+        </section>
+
+        <section id="projects">
+            <h2 style="color: rgb(103, 57, 2);">My Projects</h2>
+            <style>
+                #projects {
+                    display: grid;
+                    grid-template-columns: repeat(1fr 1fr minmax(250px, 2fr));
+                    gap: 20px;
+                }
+                #projects article {
+                    padding: 15px;
+                    border: 1px solid #521616;
+                    border-radius: 8px;
+                    background-color: #cbb2b2;
+                }
+            </style>
+          
+            <article>
+                <h3>Dog diet: dry and wet food</h3>
+                <p>Information about dog diets, including dry and wet food options.</p>
+                <a href="dogdiet.html">Want to know more?</a>
+            </article>
+            <article>
+                <h3>Dog Care and AI</h3>
+                <p>A page discussing the importance of dog care and how AI can assist.</p>
+                <a href="dog-care.html">Want to know more?</a>
+            </article>
+            <article>
+                <h3>AI in Dog Health Monitoring</h3>
+                <p>An AI project for monitoring and predicting dog health issues using machine learning.</p>
+                <a href="ai-dog-health.html">Want to know more?</a>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <style>
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 400px;
+                }
+                label {
+                    margin-top: 10px;
+                }
+                input, textarea {
+                    padding: 8px;
+                    margin-top: 5px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+                button {
+                    margin-top: 15px;
+                    padding: 10px;
+                    background-color: #8d5c21;
+                    color: white;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                button:hover {
+                    background-color: #7a4e1a;
+                }
+            </style>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Inga. All rights reserved.</p>
+        <ul>
+            <li><a href="https://www.facebook.com/inga.ku4arova">Facebook</a></li>
+            <li><a href="https://github.com/ku4arova-ctrl">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/inga-ku4arova-123456789/">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
